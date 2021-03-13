@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import Header from '../components/Header'
-import Card from '../components/Card'
+import Main from '../components/Main'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet" />
       </Head>
       <Header />
-      <Card />
+      <Main />
     </div>
   )
 }

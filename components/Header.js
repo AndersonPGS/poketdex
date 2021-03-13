@@ -9,6 +9,10 @@ const Container = styled.nav`
     align-items: center;
     justify-content: center;
     color: var(--text);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 `
 const HeaderWrapper = styled.div`
     width: 80%;

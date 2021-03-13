@@ -1,14 +1,17 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-    height: 400px;
-    width: 300px;
+    min-height: 400px;
+    min-width: 300px;
+    max-height: 400px;
+    max-width: 300px;
     background-color: var(--secondary);
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
     border-radius: 10px;
+    margin: 0px 5px 50px 5px;
 
     &:hover > img{
         height: 200px;
