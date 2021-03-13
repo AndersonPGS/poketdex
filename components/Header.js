@@ -1,14 +1,14 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 
-const Header = styled.nav`
+const Container = styled.nav`
     display: flex;
     width: 100%;
     height: 50px;
-    background-color: #232323;
+    background-color: var(--secondary);
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--text);
 `
 const HeaderWrapper = styled.div`
     width: 80%;
@@ -34,9 +34,9 @@ const LogoIMG = styled.img`
     margin-right: 10px;
 `
 
-export default function HeaderNav() {
+export default function Header() {
     return(
-        <Header>
+        <Container>
             <HeaderWrapper>
                 <div>
                     <LogoIMG src="./pokemon.png" alt="Poketdex"/>
@@ -48,6 +48,6 @@ export default function HeaderNav() {
                     <Link href=""><a>Sobre</a></Link>
                 </div>
             </HeaderWrapper>
-        </Header>
+        </Container>
     )
 }
