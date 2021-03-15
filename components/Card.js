@@ -1,4 +1,7 @@
 import styled from 'styled-components'
+import {normal, fire, water, grass, electric, fighting, poison, ground, 
+        flying, psychic, bug, rock, ghost, ice, dragon, dark,steel,fairy
+        } from './PokemonTypes'
 
 const Container = styled.div`
     min-height: 400px;
@@ -66,7 +69,7 @@ export default function Card() {
             <Content>
                 <Title>Pikachu</Title>
                 
-                <Type src="./types/Ice.svg"/>
+                <Type src={normal}/>
             </Content>
         </Container>
     )
